@@ -1,0 +1,10 @@
+rootProject.name = 'thrift-starter'
+
+include 'examples:thrift'
+include 'examples:test'
+include 'autoconfigure'
+include 'starter'
+
+project(':autoconfigure').name = 'thrift-starter-autoconfigure'
+project(':starter').name = 'thrift-starter'
+

@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.microservices.thrift.configuration.ThriftAutoConfiguration,\
+com.microservices.thrift.configuration.ThriftPoolConfiguration

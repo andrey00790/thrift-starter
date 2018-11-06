@@ -1,0 +1,17 @@
+apply plugin: 'nebula.maven-publish'
+apply plugin: 'nebula.compile-api'
+apply plugin: 'nebula.source-jar'
+apply plugin: 'nebula.optional-base'
+
+dependencies {
+    compileOnly 'org.apache.thrift:libthrift', optional
+
+    compileOnly "org.springframework.boot:spring-boot-starter-web", optional
+    compileOnly "org.springframework.boot:spring-boot-starter-actuator", optional
+    compileOnly "org.springframework.cloud:spring-cloud-starter-netflix-ribbon", optional
+    compileOnly "org.springframework.cloud:spring-cloud-starter-zipkin", optional
+
+    compileOnly 'org.apache.commons:commons-pool2', optional
+    compileOnly 'org.apache.commons:commons-lang3', optional
+}
+

@@ -1,0 +1,7 @@
+dependencies {
+    compile project(":thrift-starter")
+    compile project(":examples:thrift")
+    compile "org.eclipse.jetty:jetty-server"
+    compile "org.eclipse.jetty:jetty-servlet"
+    compile "org.codehaus.groovy:groovy-all"
+}
